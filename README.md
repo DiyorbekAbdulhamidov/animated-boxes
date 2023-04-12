@@ -1,4 +1,4 @@
-# JS Advanced
+<!-- # JS Advanced
 
     ✅ Expression vs Statement
     ✅ OOP && Object.create && Object.assign
@@ -26,4 +26,4 @@
     ✅ Constructor function
     ✅ Inheritance
 
-# [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
+# [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions) -->
