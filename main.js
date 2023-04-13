@@ -19,10 +19,6 @@ setInterval(() => {
         bottomC = 700;
         dvd.style.background = `${randomHex()}`
         count.textContent = +count.textContent + 1;
-        
-        if(dvd.style.bottom == '700px'){
-            console.log(true);
-        }
     }
 
 }, 0.2);
