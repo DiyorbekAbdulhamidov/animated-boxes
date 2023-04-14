@@ -1,6 +1,7 @@
-*{
+* {
     background-color: black;
 }
+
 .dvd-logo {
     position: absolute;
     top: 0;
@@ -12,7 +13,6 @@
     border-radius: 5px;
     color: black;
     font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    display: grid;
+    place-items: center;
+}
