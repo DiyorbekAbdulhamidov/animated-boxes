@@ -10,6 +10,6 @@
     left: 0;
     width: 150px;
     height: 100px;
-    background: url('unnamed.png') no-repeat center center;
+    background: url('/assets/unnamed.png') no-repeat center center;
     background-size: contain;
   }
