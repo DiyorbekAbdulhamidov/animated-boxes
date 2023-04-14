@@ -7,10 +7,10 @@ function randomHex() {
 
 for (let i = 0; i < random; i++) {
   let logo = document.createElement('div');
-  logo.classList.add('dvd-logo');
-  let fr = document.createDocumentFragment();
-  fr.appendChild(logo);
-  document.body.appendChild(fr);
+  logo.className = 'dvd-logo';
+  let frag = document.createDocumentfragagment();
+  frag.appendChild(logo);
+  document.body.appendChild(frag);
 
   let maxX = window.innerWidth - logo.offsetWidth;
   let maxY = window.innerHeight - logo.offsetHeight;
@@ -38,7 +38,7 @@ for (let i = 0; i < random; i++) {
     }
     logo.style.left = x + 'px';
     logo.style.top = y + 'px';
-    requestAnimationFrame(animate);
+    requestAnimationfragame(animate);
   }
 
   animate();
