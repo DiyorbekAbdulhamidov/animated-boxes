@@ -18,8 +18,8 @@ for (let i = 0; i < random; i++) {
   let x = Math.floor(Math.random() * maxX);
   let y = Math.floor(Math.random() * maxY);
 
-  let dx = 7;
-  let dy = 7;
+  let dx = 5;
+  let dy = 5;
 
   function animate() {
     maxX = window.innerWidth - logo.offsetWidth;
@@ -27,10 +27,12 @@ for (let i = 0; i < random; i++) {
     x += dx;
     y += dy;
     if (x < 0 || x > maxX) {
-      logo.style.background = randomHex()
+      logo.style.background = randomHex();
+      logo.textContent = +logo.textContent + 1;
       dx = -dx;
     }
     if (y < 0 || y > maxY) {
+      logo.textContent = +logo.textContent + 1;
       logo.style.background = randomHex()
       dy = -dy;
     }

@@ -13,4 +13,9 @@
     background-color: blueviolet;
     background-size: contain;
     border-radius: 5px;
+    color: black;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
