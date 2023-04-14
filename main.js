@@ -25,13 +25,13 @@ for (let i = 0; i < random; i++) {
     maxY = window.innerHeight - logo.offsetHeight;
     x += dx;
     y += dy;
-    
+
     if (x < 0 || x > maxX) {
       logo.style.background = randomHex();
       logo.textContent = +logo.textContent + 1;
       dx = -dx;
     }
-    
+
     if (y < 0 || y > maxY) {
       logo.textContent = +logo.textContent + 1;
       logo.style.background = randomHex()
