@@ -1,9 +1,11 @@
-const logos = [];
-for (let i = 0; i < 5; i++) {
+let random = Math.floor(Math.random() * 5) + 1;
+
+for (let i = 0; i < random; i++) {
   let logo = document.createElement('div');
   logo.classList.add('dvd-logo');
-  document.body.appendChild(logo);
-  logos.push(logo);
+  let fr = document.createDocumentFragment();
+  fr.appendChild(logo);
+  document.body.appendChild(fr);
 
   let maxX = window.innerWidth - logo.offsetWidth;
   let maxY = window.innerHeight - logo.offsetHeight;
