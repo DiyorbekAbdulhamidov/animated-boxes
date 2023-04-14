@@ -1,5 +1,10 @@
 let random = Math.floor(Math.random() * 5) + 1;
 
+
+function randomHex() {
+  return '#' + Math.random().toString(16).substring(2, 8)
+}
+
 for (let i = 0; i < random; i++) {
   let logo = document.createElement('div');
   logo.classList.add('dvd-logo');
@@ -22,9 +27,11 @@ for (let i = 0; i < random; i++) {
     x += dx;
     y += dy;
     if (x < 0 || x > maxX) {
+      logo.style.background = randomHex()
       dx = -dx;
     }
     if (y < 0 || y > maxY) {
+      logo.style.background = randomHex()
       dy = -dy;
     }
     logo.style.left = x + 'px';

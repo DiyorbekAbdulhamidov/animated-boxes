@@ -10,6 +10,7 @@
     left: 0;
     width: 150px;
     height: 100px;
-    background: url('/assets/unnamed.png') no-repeat center center;
+    background-color: blueviolet;
     background-size: contain;
+    border-radius: 5px;
   }
