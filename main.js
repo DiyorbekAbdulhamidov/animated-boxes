@@ -5,14 +5,14 @@ function randomHex() {
 }
 
 for (let i = 0; i < random; i++) {
-  let logo = document.createElement('div');
-  logo.classList.add('dvd-logo');
+  let box = document.createElement('div');
+  box.classList.add('box');
   let fr = document.createDocumentFragment();
-  fr.appendChild(logo);
+  fr.appendChild(box);
   document.body.appendChild(fr);
 
-  let maxX = window.innerWidth - logo.offsetWidth;
-  let maxY = window.innerHeight - logo.offsetHeight;
+  let maxX = window.innerWidth - box.offsetWidth;
+  let maxY = window.innerHeight - box.offsetHeight;
 
   let x = Math.floor(Math.random() * maxX);
   let y = Math.floor(Math.random() * maxY);
@@ -21,24 +21,24 @@ for (let i = 0; i < random; i++) {
   let dy = 5;
 
   function animate() {
-    maxX = window.innerWidth - logo.offsetWidth;
-    maxY = window.innerHeight - logo.offsetHeight;
+    maxX = window.innerWidth - box.offsetWidth;
+    maxY = window.innerHeight - box.offsetHeight;
     x += dx;
     y += dy;
 
     if (x < 0 || x > maxX) {
-      logo.style.background = randomHex();
-      logo.textContent = +logo.textContent + 1;
+      box.style.background = randomHex();
+      box.textContent = +box.textContent + 1;
       dx = -dx;
     }
 
     if (y < 0 || y > maxY) {
-      logo.textContent = +logo.textContent + 1;
-      logo.style.background = randomHex()
+      box.textContent = +box.textContent + 1;
+      box.style.background = randomHex()
       dy = -dy;
     }
-    logo.style.left = x + 'px';
-    logo.style.top = y + 'px';
+    box.style.left = x + 'px';
+    box.style.top = y + 'px';
     requestAnimationFrame(animate);
   }
 
