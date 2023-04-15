@@ -1,6 +1,9 @@
 * {
     background-color: black;
 }
+body{
+    overflow: hidden;
+}
 
 .box {
     position: absolute;
